@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Markt 12 | Kiosk & DHL Paketshop Köln-Chorweiler</title>
+<meta name="description" content="Markt 12 – Ihr Kiosk und offizieller DHL Paketshop in Köln-Chorweiler. Paketannahme, Versand, Getränke, Snacks, Eis und vieles mehr.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+    --primary:#FFCC00;
+    --dark:#111827;
+    --gray:#6B7280;
+    --light:#F9FAFB;
+    --white:#ffffff;
+    --shadow:0 15px 40px rgba(0,0,0,.08);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Inter',sans-serif;
+    color:var(--dark);
+    line-height:1.6;
+    background:#fff;
+}
+.container{
+    width:min(1200px,90%);
+    margin:auto;
+}
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+.logo{
+    font-size:1.5rem;
+    font-weight:800;
+}
+.logo span{
+    color:var(--primary);
+}
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+.nav-links a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:600;
+}
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+}
+.hero-content{
+    width:100%;
+}
+.hero h1{
+    font-size:clamp(3rem,8vw,6rem);
+    font-weight:900;
+    margin-bottom:20px;
+}
+.hero p{
+    font-size:1.2rem;
+    max-width:750px;
+    margin:auto;
+}
+.buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+.btn-primary{
+    background:var(--primary);
+    color:black;
+}
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
+.btn:hover{
+    transform:translateY(-3px);
+}
+section{
+    padding:100px 0;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+.section-title h2{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-8px);
+}
+.card h3{
+    margin:15px 0;
+}
+.why{
+    background:var(--light);
+}
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.feature{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    font-weight:600;
+    box-shadow:var(--shadow);
+}
+.hours{
+    max-width:700px;
+    margin:auto;
+    box-shadow:var(--shadow);
+    border-radius:20px;
+    overflow:hidden;
+}
+.row{
+    display:flex;
+    justify-content:space-between;
+    padding:18px 25px;
+    border-bottom:1px solid #eee;
+}
+.row:last-child{
+    border:none;
+}
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:40px;
+    align-items:center;
+}
+.contact-box{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+.contact-box p{
+    margin:15px 0;
+}
+iframe{
+    width:100%;
+    height:350px;
+    border:none;
+    border-radius:20px;
+}
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+@media(max-width:768px){
+    .nav-links{
+        display:none;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<nav>
+<div class="logo">Markt <span>12</span></div>
+<div class="nav-links">
+<a href="#leistungen">Leistungen</a>
+<a href="#warum">Warum wir</a>
+<a href="#zeiten">Öffnungszeiten</a>
+<a href="#kontakt">Kontakt</a>
+</div>
+</nav>
+</div>
+</header>
+<section class="hero">
+<div class="container hero-content">
+<h1>Markt 12</h1>
+<p>
+Ihr Kiosk & offizieller DHL Paketshop in Köln-Chorweiler.
+Paketversand, Paketannahme, Getränke, Snacks, Eis und vieles mehr.
+</p>
+<div class="buttons">
+<a href="tel:01631441252" class="btn btn-primary">📞 Jetzt anrufen</a>
+<a href="https://maps.google.com/?q=Schaaffhausenstraße+2a+50769+Köln" class="btn btn-secondary">📍 Navigation</a>
+</div>
+</div>
+</section>
+<section id="leistungen">
+<div class="container">
+<div class="section-title">
+<h2>Unsere Leistungen</h2>
+<p>Alles an einem Ort.</p>
+</div>
+<div class="cards">
+<div class="card">
